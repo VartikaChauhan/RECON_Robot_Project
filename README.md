@@ -35,6 +35,14 @@ This project was completed as part of my Final Year Engineering curriculum and s
 
 ---
 
+## 📡Communication Protocols
+- **Serial Communication**: Used for data exchange between Arduino Mega, ESP32-CAM, and ESP8266  
+- **HTTP Protocol**: Used between Flask server and YOLOv5 for video processing results  
+- **TCP/IP over WiFi**: Enables ESP32-CAM and ESP8266 to communicate with the server and app via network sockets  
+- **UART Protocol**: Facilitates inter-microcontroller communication (e.g., ESP8266 ↔ Arduino Mega)
+
+---
+
 ## 🛠️ Technologies Used
 
 | Technology       | Purpose                          |
@@ -62,9 +70,10 @@ This project was completed as part of my Final Year Engineering curriculum and s
 
 ## 📍 Real-Time GPS Sharing
 When a human is detected, the robot:
-1. Captures current GPS coordinates
-2. Sends data via ESP8266 to server/mobile
-3. Marks location for rescue team
+- Captures current GPS coordinates using the NEO-6M GPS module  
+- Sends location and detection info via ESP8266  
+- Shares data over WiFi using HTTP/MQTT to server or mobile app  
+- Marks survivor's location for the rescue team
 
 ---
 

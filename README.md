@@ -1,41 +1,41 @@
 # RECON (Responsive Earthquake Conditions Operations Navigator) 🕷️🤖  
 *A Six-Legged Spider Bot for Disaster Search & Rescue*
 
-## 🚀 Project Overview
+##  Project Overview
 In disaster situations like earthquakes, **time is critical** when it comes to saving lives. Traditional wheeled robots often fail to navigate debris-filled environments. To solve this, I present **RECON**, a six-legged spider robot (hexapod) designed to assist in **search and rescue operations** with precision and adaptability.
 
 This project was completed as part of my Final Year Engineering curriculum and serves as a practical demonstration of how robotics, AI, and IoT can work together to aid humanity in times of crisis.
 
 ---
 
-## 🔍 Key Features
+##  Key Features
 
-### ✅ Autonomous Hexapod Locomotion
+###  Autonomous Hexapod Locomotion
 - Powered by **12 MG996R servo motors**
 - Controlled via **Arduino Mega 2560**
 - Implements a **Hexapod Gait Algorithm** for stable movement over rough and unstable terrain
 
-### ✅ Thermal Human Detection
+###  Thermal Human Detection
 - Uses **MLX90614 IR temperature sensor** to detect living beings based on thermal signature
 - Can detect survivors even in **dark, dusty, or smoke-filled** environments
 
-### ✅ Real-Time Image Processing via YOLOv5
+###  Real-Time Image Processing via YOLOv5
 - Onboard **ESP32-CAM** streams video over WiFi
 - A **Flask-based server** receives the stream and runs **YOLOv5** object detection to confirm if the thermal signature is a human
 - Ensures minimal **false positives**
 
-### ✅ GPS Location Transmission
+###  GPS Location Transmission
 - **NEO-6M GPS module** fetches current location coordinates
 - **ESP8266 WiFi module** sends detected survivor's location to a web dashboard/server or mobile device via IoT protocols
 
-### ✅ Smartphone Controller App
+###  Smartphone Controller App
 - Developed using **MIT App Inventor**
 - Allows remote control of the robot’s movement, live video feed, and emergency stop
 - Real-time display of GPS coordinates and detection status
 
 ---
 
-## 📡Communication Protocols
+## Communication Protocols
 - **Serial Communication**: Used for data exchange between Arduino Mega, ESP32-CAM, and ESP8266  
 - **HTTP Protocol**: Used between Flask server and YOLOv5 for video processing results  
 - **TCP/IP over WiFi**: Enables ESP32-CAM and ESP8266 to communicate with the server and app via network sockets  
@@ -43,7 +43,7 @@ This project was completed as part of my Final Year Engineering curriculum and s
 
 ---
 
-## 🛠️ Technologies Used
+##  Technologies Used
 
 | Technology       | Purpose                          |
 |------------------|-----------------------------------|
@@ -58,7 +58,7 @@ This project was completed as part of my Final Year Engineering curriculum and s
 
 ---
 
-## 🧠 YOLOv5 Model Integration
+##  YOLOv5 Model Integration
 - Flask server hosted on a laptop or cloud VM
 - Accepts live video stream from ESP32-CAM
 - Detects **"person"** label via YOLOv5
@@ -68,7 +68,7 @@ This project was completed as part of my Final Year Engineering curriculum and s
 
 ---
 
-## 📍 Real-Time GPS Sharing
+##  Real-Time GPS Sharing
 When a human is detected, the robot:
 - Captures current GPS coordinates using the NEO-6M GPS module  
 - Sends location and detection info via ESP8266  
@@ -77,20 +77,20 @@ When a human is detected, the robot:
 
 ---
 
-## 🌟 Impact
+##  Impact
 
 RECON showcases how **robotics + deep learning + IoT** can significantly improve rescue operations by quickly identifying and geolocating trapped survivors—without risking human lives. This is a strong example of **engineering for social good**.
 
 ---
 
-## 📸 Robot Images
+##  Robot Images
 
 | ![RECON](./Media/Image_1.jpeg) | ![RECON](./Media/Image_2.jpeg) |
 |:--:|:--:|
 
 ---
 
-## 📦 Folder Structure (Recommended for GitHub)
+##  Folder Structure (Recommended for GitHub)
 ```
 RECON_Robot_Project/
 ├── .gitmodules/
@@ -112,9 +112,8 @@ RECON_Robot_Project/
 
 ---
 
----
 
-## 📥 Cloning with Submodules
+##  Cloning with Submodules
 
 To clone this repository and initialize all required submodules (e.g., YOLOv5):
 
